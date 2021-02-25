@@ -1,0 +1,27 @@
+@for $i from 1 through 5 
+    .strip:nth-child(#{$i}) .strip_content
+        @if($i == 1)
+            background: $blue
+            animation-name: strip--u4rx9pe
+            animation-duration: 0.5s
+            animation-timing-function: $timing
+        @if($i == 2)
+            background: $turquoise
+            animation-name: strip--u4rx9pg
+            animation-duration: 0.8s
+            animation-timing-function: $timing
+        @if($i == 3)
+            background: $purple
+            animation-name: strip--u4rx9q8
+            animation-duration: 0.7s
+            animation-timing-function: $timing
+        @if($i == 4)
+            background: $yellow
+            animation-name: strip--u4rx9qn
+            animation-duration: 1s
+            animation-timing-function: $timing
+        @if($i == 5)
+            background: $red
+            animation-name: strip--u4rx9r0
+            animation-duration: 1.1s
+            animation-timing-function: $timing            
