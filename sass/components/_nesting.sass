@@ -1,0 +1,42 @@
+.strips
+    height: $vheight
+    width: $vwidth
+    overflow: $hide
+    display: $display
+    cursor: pointer
+
+    .strip
+        position: relative
+        width: 19.9vw
+        margin: 0.1vw
+        height: $vheight
+        @include center
+        overflow: $hide
+
+        strip_content
+            @include center
+            height: $vheight
+            width: 100%
+            position: $positionA
+
+            &:before
+                content: ""
+                display: $display
+                align-items: $alignI
+                justify-content: $justifyC
+                position: $positionA
+                z-index: 1
+                top: 0
+                left: 0
+                width: 20vw
+                height: $vheight
+                background: $white
+                opacity: 0.05s
+                transform-origin: $alignI $justifyC
+                transform: skew(30deg) scaleY(1) translate(0, 0)
+                transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1)
+                overflow: $hide
+
+
+
+
